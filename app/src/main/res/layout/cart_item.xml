@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="32dp"
+    android:background="@color/white"
+    tools:ignore="HardcodedText,ContentDescription">
+
+    <ImageView
+        android:id="@+id/cartItemImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/cart_item_bg"
+        android:src="@drawable/headphone"
+        app:layout_constraintBottom_toBottomOf="@+id/cartValueContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.325" />
+
+    <TextView
+        android:id="@+id/cartItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:fontFamily="@font/dmsans_regular"
+        android:text="TMA-2 Comfort Wireless"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/cartItemImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cartItemValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/dmsans_bold"
+        android:text="USD 270"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/cartItemName"
+        app:layout_constraintTop_toBottomOf="@+id/cartItemName" />
+
+    <LinearLayout
+        android:id="@+id/cartValueContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/cartItemValue"
+        app:layout_constraintTop_toBottomOf="@+id/cartItemValue">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cart_value_bg"
+            android:src="@drawable/minus" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/dmsans_regular"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cart_value_bg"
+            android:src="@drawable/plus" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/cartItemDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/delete_grey"
+        app:layout_constraintBottom_toBottomOf="@+id/cartValueContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cartValueContainer" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
