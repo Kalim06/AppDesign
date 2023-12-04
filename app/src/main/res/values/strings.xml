@@ -3,4 +3,7 @@
     <string name="sign_up_here"><u>Sign Up Here</u></string>
     <string name="sign_in_here"><u>Sign In Here</u></string>
     <string name="review_filler">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="feature_filler">The speaker unit contains a diaphragm that is precision-grown from NAC Audio bio-cellulose, making it stiffer, lighter and stronger than regular PET speaker units, and allowing the sound-producing diaphragm to vibrate without the levels of distortion found in other speakers.</string>
+    <string name="feature_text_holder1">The Aptx® HD codec transmits 24-bit hi-res audio, equal to or better than CD quality.</string>
+    <string name="feature_text_holder2">Alcantara® is a highly innovative material offering an unrivalled combination.</string>
 </resources>
