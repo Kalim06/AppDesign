@@ -9,29 +9,29 @@
     tools:ignore="ContentDescription, HardcodedText">
 
     <ImageView
-        android:id="@+id/cartBack"
+        android:id="@+id/searchBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:src="@drawable/chevron_left"
-        app:layout_constraintBottom_toBottomOf="@+id/cartDelete"
+        app:layout_constraintBottom_toBottomOf="@+id/searchCart"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/cartDelete" />
+        app:layout_constraintTop_toTopOf="@+id/searchCart" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/searchTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/dmsans_bold"
         android:text="Search"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/cartDelete"
-        app:layout_constraintEnd_toStartOf="@+id/cartDelete"
-        app:layout_constraintStart_toEndOf="@+id/cartBack"
-        app:layout_constraintTop_toTopOf="@+id/cartDelete" />
+        app:layout_constraintBottom_toBottomOf="@+id/searchCart"
+        app:layout_constraintEnd_toStartOf="@+id/searchCart"
+        app:layout_constraintStart_toEndOf="@+id/searchBack"
+        app:layout_constraintTop_toTopOf="@+id/searchCart" />
 
     <ImageView
-        android:id="@+id/cartDelete"
+        android:id="@+id/searchCart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -50,10 +50,10 @@
         android:background="@drawable/search_bg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5">
+        app:layout_constraintTop_toBottomOf="@+id/searchTitle">
 
         <ImageView
-            android:id="@+id/search_icon"
+            android:id="@+id/searchIcon"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_alignParentStart="true"
@@ -62,11 +62,12 @@
             app:tint="@color/grey" />
 
         <TextView
+            android:id="@+id/searchInput"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:layout_marginStart="8dp"
-            android:layout_toEndOf="@id/search_icon"
+            android:layout_toEndOf="@id/searchIcon"
             android:fontFamily="@font/dmsans_regular"
             android:letterSpacing="0.02"
             android:text="Search headphone"
@@ -75,7 +76,7 @@
     </RelativeLayout>
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/latestSearchTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -109,7 +110,7 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6">
+        app:layout_constraintTop_toBottomOf="@+id/latestSearchTitle">
 
         <include layout="@layout/latest_search_item" />
 
@@ -117,7 +118,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/popularProductTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -138,7 +139,7 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7">
+        app:layout_constraintTop_toBottomOf="@+id/popularProductTitle">
 
         <include layout="@layout/popular_product_item" />
 
