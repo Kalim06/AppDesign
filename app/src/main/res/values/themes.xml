@@ -5,11 +5,5 @@
         <item name="android:windowLightStatusBar">true</item>
     </style>
 
-    <style name="Login.Theme.AppDesign" parent="Theme.Material3.Dark.NoActionBar">
-        <item name="android:windowTranslucentStatus">true</item>
-        <item name="android:windowTranslucentNavigation">true</item>
-        <item name="android:windowLightStatusBar">false</item>
-    </style>
-
     <style name="Theme.AppDesign" parent="Base.Theme.AppDesign" />
 </resources>
