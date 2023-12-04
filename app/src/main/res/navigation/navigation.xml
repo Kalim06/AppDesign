@@ -117,7 +117,21 @@
         android:id="@+id/searchFragment"
         android:name="com.example.appdesign.fragments.SearchFragment"
         android:label="fragment_search"
-        tools:layout="@layout/fragment_search" />
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_searchFragment_to_cartFragment"
+            app:destination="@id/cartFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_searchFragment_to_productDetailFragment"
+            app:destination="@id/productDetailFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/searchFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
     <fragment
         android:id="@+id/cartFragment"
         android:name="com.example.appdesign.fragments.CartFragment"

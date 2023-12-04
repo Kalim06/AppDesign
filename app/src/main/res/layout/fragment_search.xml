@@ -144,16 +144,24 @@
         app:layout_constraintTop_toBottomOf="@+id/popularProductTitle">
 
         <include
+            android:id="@+id/searchItem1"
             layout="@layout/popular_product_item"
+            android:clickable="true"
+            android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground" />
 
         <include
+            android:id="@+id/searchItem2"
             layout="@layout/popular_product_item"
+            android:clickable="true"
+            android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground" />
 
         <include
+            android:id="@+id/searchItem3"
             layout="@layout/popular_product_item"
-            android:foreground="?android:attr/selectableItemBackground" />
+            android:clickable="true"
+            android:focusable="true" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
