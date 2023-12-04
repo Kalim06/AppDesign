@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="@+id/cartDelete" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/cartTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/dmsans_bold"
@@ -67,7 +67,7 @@
         app:layout_constraintBottom_toTopOf="@+id/cartSummary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5">
+        app:layout_constraintTop_toBottomOf="@+id/cartTitle">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -93,6 +93,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <TextView
+            android:id="@+id/cartTotalItems"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -103,6 +104,7 @@
             android:textSize="14sp" />
 
         <TextView
+            android:id="@+id/cartTotalValue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
