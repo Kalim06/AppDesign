@@ -115,19 +115,32 @@
             android:visibility="gone" />
     </LinearLayout>
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/pdFragmentContainerView"
+    <include
+        layout="@layout/fragment_overview"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="24dp"
         app:layout_constraintBottom_toTopOf="@+id/pdAddToCartBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pdFeaturesBtn"
-        tools:layout="@layout/fragment_overview" />
+        app:layout_constraintTop_toBottomOf="@+id/pdFeaturesBtn" />
+
+    <!--    <androidx.fragment.app.FragmentContainerView-->
+    <!--        android:id="@+id/pdFragmentContainerView"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_marginStart="24dp"-->
+    <!--        android:layout_marginTop="32dp"-->
+    <!--        android:layout_marginEnd="24dp"-->
+    <!--        android:layout_marginBottom="32dp"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/pdAddToCartBtn"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/pdFeaturesBtn"-->
+    <!--        app:layout_constraintVertical_bias="0.0"-->
+    <!--        tools:layout="@layout/fragment_overview" />-->
 
     <TextView
         android:id="@+id/pdAddToCartBtn"
@@ -135,7 +148,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="24dp"
         android:background="@drawable/green_btn_bg"
         android:fontFamily="@font/dmsans_bold"
         android:text="Add To Cart"

@@ -2,4 +2,5 @@
     <string name="app_name">App Design</string>
     <string name="sign_up_here"><u>Sign Up Here</u></string>
     <string name="sign_in_here"><u>Sign In Here</u></string>
+    <string name="review_filler">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
 </resources>
