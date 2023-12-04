@@ -13,6 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
+        android:foreground="?android:attr/selectableItemBackground"
         android:src="@drawable/chevron_left"
         app:layout_constraintBottom_toBottomOf="@+id/cartDelete"
         app:layout_constraintStart_toStartOf="parent"
@@ -125,6 +126,7 @@
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="32dp"
         android:background="@drawable/green_btn_bg"
+        android:foreground="?android:attr/selectableItemBackground"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">

@@ -43,6 +43,7 @@
         android:layout_marginEnd="24dp"
         android:clickable="true"
         android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
         android:src="@drawable/user_pic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -81,6 +82,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:background="@drawable/search_bg"
+        android:foreground="?android:attr/selectableItemBackground"
         app:layout_constraintEnd_toEndOf="@+id/homeGreeting"
         app:layout_constraintStart_toStartOf="@+id/homeGreeting"
         app:layout_constraintTop_toBottomOf="@+id/homeGreeting">
@@ -216,11 +218,17 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
-                    <include layout="@layout/listing_item" />
+                    <include
+                        layout="@layout/listing_item"
+                        android:foreground="?android:attr/selectableItemBackground" />
 
-                    <include layout="@layout/listing_item" />
+                    <include
+                        layout="@layout/listing_item"
+                        android:foreground="?android:attr/selectableItemBackground" />
 
-                    <include layout="@layout/listing_item" />
+                    <include
+                        layout="@layout/listing_item"
+                        android:foreground="?android:attr/selectableItemBackground" />
                 </LinearLayout>
             </HorizontalScrollView>
 
@@ -278,13 +286,21 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
-                    <include layout="@layout/featured_item" />
+                    <include
+                        layout="@layout/featured_item"
+                        android:foreground="?android:attr/selectableItemBackground" />
 
-                    <include layout="@layout/temp_featured_item" />
+                    <include
+                        layout="@layout/temp_featured_item"
+                        android:foreground="?android:attr/selectableItemBackground" />
 
-                    <include layout="@layout/featured_item" />
+                    <include
+                        layout="@layout/featured_item"
+                        android:foreground="?android:attr/selectableItemBackground" />
 
-                    <include layout="@layout/temp_featured_item" />
+                    <include
+                        layout="@layout/temp_featured_item"
+                        android:foreground="?android:attr/selectableItemBackground" />
                 </LinearLayout>
             </HorizontalScrollView>
         </LinearLayout>
