@@ -126,7 +126,8 @@
         app:layout_constraintBottom_toTopOf="@+id/pdAddToCartBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pdFeaturesBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/pdFeaturesBtn"
+        tools:layout="@layout/fragment_overview" />
 
     <TextView
         android:id="@+id/pdAddToCartBtn"
