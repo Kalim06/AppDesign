@@ -6,6 +6,7 @@
     android:layout_height="wrap_content"
     android:layout_marginEnd="16dp"
     android:background="@drawable/featured_item_bg"
+    android:foreground="?android:attr/selectableItemBackground"
     tools:ignore="ContentDescription,HardcodedText">
 
     <ImageView
