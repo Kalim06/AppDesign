@@ -1,5 +1,6 @@
 package com.example.appdesign.fragments
 
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -28,6 +29,14 @@ class SignInFragment : Fragment() {
 
         //Sign In
         binding.signInBtn.setOnClickListener {
+
+            val sharedPref =
+                activity?.getPreferences(Context.MODE_PRIVATE) ?: return@setOnClickListener
+            with(sharedPref.edit()) {
+                putBoolean("userLoggedIn", true)
+                apply()
+            }
+
             it.findNavController().navigate(R.id.action_signInFragment_to_homeFragment)
         }
 

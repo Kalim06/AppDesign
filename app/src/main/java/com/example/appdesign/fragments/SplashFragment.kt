@@ -1,5 +1,6 @@
 package com.example.appdesign.fragments
 
+import android.content.Context
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -22,8 +23,18 @@ class SplashFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        //User Logged In Navigation
+        val sharedPref = activity?.getPreferences(Context.MODE_PRIVATE) ?: return
+        val userLoggedIn = sharedPref.getBoolean("userLoggedIn", false)
+
         Handler(Looper.getMainLooper()).postDelayed({
-            view.findNavController().navigate(R.id.action_splashFragment_to_signInFragment)
+
+            if (userLoggedIn) {
+                view.findNavController().navigate(R.id.action_splashFragment_to_homeFragment)
+            } else {
+                view.findNavController().navigate(R.id.action_splashFragment_to_signInFragment)
+            }
+
         }, 3000)
     }
 }
