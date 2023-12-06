@@ -57,7 +57,9 @@
                 style="@style/inputEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Email" />
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -69,9 +71,16 @@
             android:layout_marginStart="24dp"
             android:layout_marginEnd="24dp"
             android:layout_marginBottom="32dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="16"
+            app:counterTextAppearance="@style/counterText"
+            app:counterTextColor="@color/white"
+            app:errorIconDrawable="@null"
             app:layout_constraintBottom_toTopOf="@+id/forgotPasswordBtn"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/green"
             app:startIconDrawable="@drawable/lock">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -79,7 +88,9 @@
                 style="@style/inputEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Password" />
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:maxLength="16" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -97,7 +108,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <TextView
+        <Button
             android:id="@+id/signInBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

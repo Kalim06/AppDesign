@@ -36,9 +36,11 @@
         <item name="boxStrokeWidth">1dp</item>
         <item name="boxStrokeWidthFocused">1dp</item>
         <item name="cursorColor">@color/green</item>
-        <item name="hintTextColor">@color/grey</item>
         <item name="hintEnabled">false</item>
+        <item name="errorTextAppearance">@font/dmsans_regular</item>
         <item name="hintTextAppearance">@font/dmsans_regular</item>
+        <item name="errorTextColor">@color/white</item>
+        <item name="errorIconTint">@color/grey_dark</item>
         <item name="startIconTint">@color/grey</item>
     </style>
 
@@ -47,5 +49,12 @@
         <item name="fontFamily">@font/dmsans_regular</item>
         <item name="android:textColor">@color/grey_dark</item>
     </style>
+
+    <style name="counterText">
+        <item name="fontFamily">@font/dmsans_regular</item>
+        <item name="counterTextColor">@color/white</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
 
 </resources>
