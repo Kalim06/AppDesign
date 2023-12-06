@@ -39,75 +39,49 @@
             app:layout_constraintStart_toStartOf="@+id/appName"
             app:layout_constraintTop_toBottomOf="@+id/appName" />
 
-        <RelativeLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/emailLayout"
+            style="@style/inputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginEnd="24dp"
             android:layout_marginBottom="24dp"
-            android:background="@drawable/input_bg"
             app:layout_constraintBottom_toTopOf="@+id/passwordLayout"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+            app:layout_constraintStart_toStartOf="parent"
+            app:startIconDrawable="@drawable/mail">
 
-            <ImageView
-                android:id="@+id/emailIcon"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_centerInParent="true"
-                android:layout_marginEnd="8dp"
-                android:src="@drawable/mail"
-                app:tint="@color/grey" />
-
-            <TextView
+            <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/emailInput"
-                android:layout_width="wrap_content"
+                style="@style/inputEditText"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:layout_toEndOf="@id/emailIcon"
-                android:fontFamily="@font/dmsans_regular"
-                android:letterSpacing="0.02"
-                android:text="Email"
-                android:textColor="@color/grey"
-                android:textSize="16sp" />
-        </RelativeLayout>
+                android:hint="Email" />
 
-        <RelativeLayout
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/passwordLayout"
+            style="@style/inputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginEnd="24dp"
             android:layout_marginBottom="32dp"
-            android:background="@drawable/input_bg"
             app:layout_constraintBottom_toTopOf="@+id/forgotPasswordBtn"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+            app:layout_constraintStart_toStartOf="parent"
+            app:startIconDrawable="@drawable/lock">
 
-            <ImageView
-                android:id="@+id/passwordIcon"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_centerInParent="true"
-                android:layout_marginEnd="8dp"
-                android:src="@drawable/lock"
-                app:tint="@color/grey" />
-
-            <TextView
+            <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/passwordInput"
-                android:layout_width="wrap_content"
+                style="@style/inputEditText"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:layout_toEndOf="@id/passwordIcon"
-                android:fontFamily="@font/dmsans_regular"
-                android:letterSpacing="0.02"
-                android:text="Password"
-                android:textColor="@color/grey"
-                android:textSize="16sp" />
-        </RelativeLayout>
+                android:hint="Password" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
             android:id="@+id/forgotPasswordBtn"
