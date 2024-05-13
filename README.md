@@ -4,7 +4,7 @@ This repository contains a demonstration of an E-Commerce Android application bu
 
 ## Features
 
-- **User Authentication**: Users can sign up, log in, and log out securely.
+- **User Authentication**: Users can sign up, log in, and log out.
 - **Product Listing**: Display of products with details such as name, price, and image.
 - **Product Details**: View detailed information about each product.
 - **Shopping Cart**: Users can add products to their shopping cart and view their cart.
